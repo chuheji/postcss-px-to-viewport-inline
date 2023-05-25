@@ -40,6 +40,6 @@ Default Options:
 }
 
 - `viewportWidth` (Number) 视图宽度，根据设计稿而定。
-- `viewportUnit` (Number) 转换后的单位，默认为vw。
+- `viewportUnit` (String) 转换后的单位，默认为vw。
 - `unitPrecision` (Number) 转换精度，即最多保留几位小数。
 - `minPixelValue` (Number) 最小转换量，默认为1px，即 <= 1px不作转换。
