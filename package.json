@@ -1,6 +1,6 @@
 {
   "name": "postcss-px-to-viewport-inline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "将行内样式中的px转换为vw",
   "main": "index.js",
   "scripts": {
