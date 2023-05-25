@@ -38,8 +38,28 @@ Default Options:
   unitPrecision: 3,
   minPixelValue: 1
 }
+```
 
 - `viewportWidth` (Number) 视图宽度，根据设计稿而定。
 - `viewportUnit` (String) 转换后的单位，默认为vw。
 - `unitPrecision` (Number) 转换精度，即最多保留几位小数。
 - `minPixelValue` (Number) 最小转换量，默认为1px，即 <= 1px不作转换。
+
+## 以vue项目为例
+vue.config.js
+
+```js
+module.exports = {
+  configureWebpack: (config) => {
+    config.module.rules.push({
+      test: /\.(vue)$/,
+      use: {
+        loader: 'postcss-px-to-viewport-inline',
+        options: {
+          minPixelValue: 0
+        }
+      }
+    })
+  }
+}
+```
